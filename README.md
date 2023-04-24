@@ -1,9 +1,11 @@
 # AcornSsdDsd
-A disk image browser/editor for the Acorn BBC ssd and dsd image files
+A disk image browser/editor for the Acorn BBC 'ssd' and 'dsd' image files
 
-View/adjust/create single sided or double sided disk images.
-Copy files from one image to another.
-Adjust volume/file names and attributes.
+-View/adjust/create single sided or double sided disk images.
+
+-Copy files from one image to another.
+
+-Adjust volume/file names and attributes.
 
 Copyright (c) 2024 Dirk Prins
 
