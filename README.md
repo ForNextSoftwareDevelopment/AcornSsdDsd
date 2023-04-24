@@ -7,7 +7,7 @@ A disk image browser/editor for the Acorn BBC 'ssd' and 'dsd' image files
 
 -Adjust volume/file names and attributes.
 
-Copyright (c) 2024 Dirk Prins
+Copyright (c) 2023 Dirk Prins
 
 ![Screenshot](ScreenShot.png)
 
