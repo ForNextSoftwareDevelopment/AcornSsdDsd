@@ -1,1 +1,7 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+## [1.0] - 2023-04-24
+### Initial Release
+https://github.com/ForNextSoftwareDevelopment/AcornSsdDsd
 
