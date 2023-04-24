@@ -782,6 +782,11 @@ namespace Acorn
                     if ((file.folder_name == fileCopy.folder_name) && (file.file_name == fileCopy.file_name)) found = true;
                 }
 
+                foreach (DiskImage.FILE file in diskImage.filesSide1)
+                {
+                    if ((file.folder_name == fileCopy.folder_name) && (file.file_name == fileCopy.file_name)) found = true;
+                }
+
                 if (found)
                 {
                     MessageBox.Show("Already a file with the same folder/file name present", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -951,6 +956,11 @@ namespace Acorn
 
                 // Check Folder/File names for duplicates
                 bool found = false;
+                foreach (DiskImage.FILE file in diskImage.filesSide0)
+                {
+                    if ((file.folder_name == fileCopy.folder_name) && (file.file_name == fileCopy.file_name)) found = true;
+                }
+
                 foreach (DiskImage.FILE file in diskImage.filesSide1)
                 {
                     if ((file.folder_name == fileCopy.folder_name) && (file.file_name == fileCopy.file_name)) found = true;

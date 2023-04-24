@@ -696,7 +696,14 @@ namespace Acorn
                     }
                     int freeSide0 = num_sectors_side0 - totalSectorsSide0;
 
-                    if (!found)
+                    if (found)
+                    {
+                        // Insert volume information into the data (START_SECTOR_0)
+                        SetVolumeInfo();
+
+                        // Insert file information into the data (START_SECTOR_0 & START_SECTOR_1)
+                        SetFileInfo();
+                    } else
                     {
                         string message = "Not enough space on disk.\r\n";
                         if (freeSide0 >= numSectorsNeeded) message += "Try 'Organize' to remove gaps in between files.\r\n";
