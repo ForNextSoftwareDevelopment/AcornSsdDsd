@@ -1,1 +1,75 @@
+<Introduction>
+
+This is a disk image browser/editor for the Acorn BBC ssd and dsd image files.
+
+<Operations>
+
+Open an image file from the menu or the toolstrip button.
+On the left the image file name is displayed, on the right all files in this image (both sides of the disk if present) will be displayed. 
+
+You can drag/drop files from one side to another.
+
+If you wish to move/copy files from one image to another, you can open a new window from the toolstrip button and load (or create) an image.
+Then drag/drop from one window to the other.
+
+If you copy a file to an image that is compacted (less then 800 sectors) the image will be automatically be resized to 800 sectors.
+Before saving you could choose to compact it again. 
+
+You can compact an image so it will look at the last sector used (on both sides if applicable) and resize the data to the least size needed.
+After saving, the file will be generally smaller than a full sized image (2 * 800 * 256 = 400Kb in case of a double sided image).
+
+You can also organize an image so all files will be alphabetically ordered and the used sectors will be consecutive.
+
+The volume name and boot option can be adjusted by pressing the 'Volume' toolstripbutton.
+
+The folder/file name and 'locked' attribute of the last selected file in the image can be adjusted by pressing  the 'File' toolstripbutton.
+Also the right mouse button can be used if the mouse is hoovering over the file to be edited.
+
+A file can be deleted from the image by pressing the 'Delete' button (last file selected will be deleted).
+
+You can open files with the .ssd and .dsd extension with this application by double clicking the file if you set the apropriate file association.
+
+<Menu>
+
+`File->New` 
+
+Create an empty image file
+
+`File->Open` 
+
+Load a new image file
+
+`File->Close` 
+
+Close the current image file
+
+`File->Save` 
+
+Save the current image file
+
+`File->Save As`
+
+Save the current image file under a given name
+ 
+`File->Save Binary`
+
+Save the binaries from the files in the current image file together with a description file
+
+`File->Quit`
+
+Quit program
+
+`Help->Manual` 
+
+Show this manual
+
+`Help->About`
+
+Show program info
+
+-----------------------------------------------------
+Please report any bugs you encounter,
+Dirk
+info@fornext.nl 
+
 
