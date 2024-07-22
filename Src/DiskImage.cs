@@ -82,9 +82,12 @@ namespace Acorn
             this.file_name = file_name;
             this.bytes = bytes;
 
-            num_sides = 0;
-            if (file_name.EndsWith(".ssd")) num_sides = 1;
-            if (file_name.EndsWith(".dsd")) num_sides = 2;
+            num_sides = 1;
+            if (file_name.EndsWith(".ssd")) num_sides = 1; else
+            if (file_name.EndsWith(".dsd")) num_sides = 2; else
+            {
+                MessageBox.Show("No ssd or dsd extension so assuming single sided disk.", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
             volume_title_side0 = "";
             volume_title_side1 = "";

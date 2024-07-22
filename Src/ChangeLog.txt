@@ -5,3 +5,6 @@ All notable changes to this project will be documented in this file.
 ### Initial Release
 https://github.com/ForNextSoftwareDevelopment/AcornSsdDsd
 
+## [1.1] - 2024-07-22
+### Debug
+- Assuming single sided image now if extension is not .ssd or .dsd (before a 'zero sided' was assumed)
